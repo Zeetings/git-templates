@@ -1,0 +1,11 @@
+#!/bin/sh
+ 
+# This script will add the branch name every time the commit command is executed.
+# To activate it:
+# - Copy it to /path/to/your/git/repository/.git/hooks/
+ 
+# Getting the branch name
+NAME=$(git rev-parse --abbrev-ref HEAD)
+ 
+# Prepending the branch name to the commit message
+echo '['"$NAME"'] '$(cat "$1") > "$1"
