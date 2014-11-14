@@ -17,5 +17,6 @@ Git hooks:
 ### Behind the scenes
 
 When you run the installer 2 things happen:
+
 1. The contents of `template` folder are copied to `~/.git-templates`.
 2. Your global git configuration is updated to use `~/.git-templates` as the default template.
