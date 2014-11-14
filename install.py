@@ -40,7 +40,7 @@ DEFAULT_ALIASES = [
     'lsv "log --pretty=format:\'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]\' --decorate --date=short --numstat"',
     # Flat and colorful way of seeing your history
     'ls "log --pretty=format:\'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]\' --decorate --date=short"',
-    # Diff agains the index
+    # Diff against the index
     'dc "diff --cached"',
     # Ignore spaces and tabs
     'diff "diff --word-diff"',
