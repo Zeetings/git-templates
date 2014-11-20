@@ -33,9 +33,9 @@ DEFAULT_ALIASES = [
     # Because we all commit mistakes
     'undo "reset --soft HEAD^"',
     # List the last branches you've been working on by modification date order
-    'lastbranches "git for-each-ref --sort=-committerdate refs/heads | cut -c60- | head"'
+    'lastbranches "!git for-each-ref --sort=-committerdate refs/heads | cut -c60- | head"'
     # Remove merged branches as long as they are not 'master' or 'dev'
-    'prunebranches "git branch --merged dev | grep -v \'master$\' | grep -v \'dev$\' | xargs git branch -d"',
+    'prunebranches "!git branch --merged dev | grep -v \'master$\' | grep -v \'dev$\' | xargs git branch -d"',
     # Displays the log listing affected files per commit
     'lsv "log --pretty=format:\'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]\' --decorate --date=short --numstat"',
     # Flat and colorful way of seeing your history
