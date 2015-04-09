@@ -1,0 +1,4 @@
+#!/bin/sh
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+FILE=`cat "$1"`
+echo "[$BRANCH] $FILE" > "$1"
